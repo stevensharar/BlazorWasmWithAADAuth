@@ -40,7 +40,7 @@ namespace BlazorWasmWithAADAuth.Client
                 CustomUserAccount>(options =>
             {
                 builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
-                options.ProviderOptions.DefaultAccessTokenScopes.Add("8a3cc5ba-76dc-419a-ade8-fa3534c71ae2/API.Access");
+                options.ProviderOptions.DefaultAccessTokenScopes.Add("083c67f6-7add-411d-8379-21101b48d3a7/API.Access");
                 options.UserOptions.RoleClaim = "role";
             }).AddAccountClaimsPrincipalFactory<RemoteAuthenticationState, CustomUserAccount,
             CustomUserFactory>();
